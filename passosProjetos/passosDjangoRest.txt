@@ -31,7 +31,7 @@ PASSOS DJANGO-REST:
    python manage.py startapp core (criando app núcleo do projeto)
    colocar o ‘core’ no installed_apps do settings.py 
    python manage.py migrate (criando banco de dados)
-   python manage.py createsuperuser (criando usuário principal login e email podem ficar vazios, senha: avmb2022*(Sucesso22))
+   python manage.py createsuperuser (criando usuário principal login(vai pegar do sistema operacional) e email podem ficar vazios, senha: avmb2022*(Sucesso22))
    python manage.py changepassword admin (para mudar senha de algum usuario)
    python manage.py runserver (localhost:8000)
    para acessar configurações (localhost:8000/admin)
