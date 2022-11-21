@@ -13,3 +13,7 @@ namespace ImersaoAVMB
         }
     }
 }
+
+
+-Com o script pronto, para executar o código basta digitar: dotnet run
+
