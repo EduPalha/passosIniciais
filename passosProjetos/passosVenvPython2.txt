@@ -5,6 +5,6 @@ env/Scripts/activate.ps1 (ativar)
 deactivate (desativar)
 
 
-senha Postgre:
-avmb2022
+senha Postgre para testes:
+avmb2022* ou eduardo
 porta 5432
