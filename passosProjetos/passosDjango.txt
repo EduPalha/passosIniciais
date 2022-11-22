@@ -46,7 +46,7 @@ git clone http://............
 cd pastaClonada
 
 
-### Criando uma virtualenv com Python (ambiente isolado) - Ambiente localizado no diretório venv
+### Criando uma virtualenv com Python (ambiente isolado) - Ambiente localizado no diretório RAIZ
 virtualenv -p python3 venv
 
 
@@ -63,6 +63,7 @@ venv\Scripts\activate
 
 ### Instalando os softwares dentro do arquivo requirements.txt
 pip install -r requirements.txt
+Obs.: Pode ser necessário instalar ferramentas(https://visualstudio.microsoft.com/pt-br/visual-cpp-build-tools/)
 
 
 ### Iniciando um projeto Django

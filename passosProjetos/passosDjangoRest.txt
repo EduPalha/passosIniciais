@@ -4,13 +4,16 @@ PASSOS DJANGO-REST:
    cd testeApi
 
 ###Python > 3.0: 
+    virtualenv -p python3 venv
+    env\Scripts\Activate.ps1
+	ou
     python 3-m venv env (criar venv)
     . env/bin/Activate (ativar venv)
 
 
 ###Python > 2.0 e < 3.0:
    virtualenv -p /usr/local/bin/pythonw env (criar venv - MAC)
-   virtualenv -p c:\Python27\pythonw env (criar venv - Windows)
+   virtualenv -p c:\Python27\pythonw.exe env (criar venv - Windows)
    source env/bin/activate (ativar venv - MAC)
    env\Scripts\Activate.ps1 (ativar venv - Windows)
    python -V (verificar versão python)
@@ -39,8 +42,10 @@ PASSOS DJANGO-REST:
    colocar o url(r'^api-auth/', include('rest_framework.urls')) no installed_apps do urls.py e from django.conf.urls import include
 a partir do Django 2, fica assim path('api-auth/', include('rest_framework.urls')) no installed_apps do urls.py
    Django funciona na seguinte ordem: rota > view > model > serializar (ao inves de um template html, envia para o usuario uma resposta em Json)
- 
-
+   criar classe no core/aplicação em models e depois dar o comando: python manage.py makemigrations(criando tabelas e atributos do banco) na sequencia o migrate(levar esses itens para o banco, no caso o sqlite)
+   adicionar classe/import(from .models import Cliente) no admin.py da aplicação
+   adicionar: admin.site.register(Cliente)
+   criar arquivo serializers.py na pasta core/aplicação
 
 criando os requerimentos do sistema para dar push no git:
    pip freeze > requirements.txt.
