@@ -2,6 +2,8 @@ PASSOS DJANGO-REST:
 
    mkdir testeApi
    cd testeApi
+   pip install virtualenv (instalando virtualenv, caso não tenha
+   instalado ainda na máquina)
 
 ###Python > 3.0: 
     virtualenv -p python3 venv
