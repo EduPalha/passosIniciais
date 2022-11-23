@@ -3,8 +3,10 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'cw1$^%w9=tmwk3%b18n=akogd+d)$$&wdtz1f@+)-6=7$8%m4%'
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '+xg$4q^q%3xn0es-6kismo$*7xwe%_8n1im97xr3&^2@24ckyc'
 
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -50,6 +52,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'apiRest.wsgi.application'
 
+
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -59,6 +62,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -80,15 +84,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'

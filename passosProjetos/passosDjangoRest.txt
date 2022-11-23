@@ -43,11 +43,13 @@ PASSOS DJANGO-REST:
    colocar o ‘rest_framework’ no installed_apps do settings.py 
    colocar o url(r'^api-auth/', include('rest_framework.urls')) no installed_apps do urls.py e from django.conf.urls import include
 a partir do Django 2, fica assim path('api-auth/', include('rest_framework.urls')) no installed_apps do urls.py
-   Django funciona na seguinte ordem: rota > view > model > serializar (ao inves de um template html, envia para o usuario uma resposta em Json)
-   criar classe no core/aplicação em models e depois dar o comando: python manage.py makemigrations(criando tabelas e atributos do banco) na sequencia o migrate(levar esses itens para o banco, no caso o sqlite)
-   adicionar classe/import(from .models import Cliente) no admin.py da aplicação
-   adicionar: admin.site.register(Cliente)
-   criar arquivo serializers.py na pasta core/aplicação
+   criar classe(cliente) no core em models e depois dar o comando: python manage.py makemigrations(criando tabelas e atributos do banco) na sequencia o migrate(levar esses itens para o banco, no caso o sqlite)
+   adicionar from .models import Cliente no admin.py do core
+   criar arquivo serializers.py na pasta core
+   criar classe cliente view set em views do core
+   criar rotas na urls da aplicação principa (apiRest)
+
+Django funciona na seguinte ordem: rota > view > model > serializar. Depois vem o template
 
 criando os requerimentos do sistema para dar push no git:
    pip freeze > requirements.txt.

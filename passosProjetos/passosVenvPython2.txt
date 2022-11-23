@@ -1,10 +1,23 @@
-pip2 install virtualenv (instalando venv do python 2 no windows)
-python -V (versâo atual python)
-virtualenv -p c:\Python27\python.exe env
-env/Scripts/activate.ps1 (ativar)
-deactivate (desativar)
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned  (powershell como administrador)
 
 
-senha Postgre para testes:
-avmb2022* ou eduardo
-porta 5432
+  pip2 install virtualenv (instalando venv do python 2 no windows)
+	adicionar no PATH: C:\Python27\python2.exe
+	virtualenv -p python2 env (criando a venv com nome env)
+
+  pip3 install virtualenv (instalando venv do python 3 no windows)
+	adicionar no PATH: C:\Program Files\Python39\python3.exe
+	C:\'Program Files'\Python39\python3.exe -m pip install --upgrade pip
+	virtualenv -p python3 env (criando no diretorio raiz)	
+	python3 -m venv venv (criando a venv com nome env)
+  
+  
+  python -V (versão principal python no sistema, normalmente a versão mais recente)
+  env/Scripts/activate.ps1 (ativar)
+  deactivate (desativar)
+
+
+  senha Postgre para testes:
+  avmb2022* ou eduardo (caso tenha login é o usuario do SO ou admin)
+  porta 5432
