@@ -1,0 +1,47 @@
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned  (powershell como administrador)
+
+pip2 ou pip3 install virtualenv (instalando virtualenv, caso não tenha instalado ainda na máquina)
+
+mkdir <pasta aplicacao>
+
+cd <pasta aplicacao>
+
+
+###Python > 2.0:
+MAC:
+	virtualenv -p /usr/local/bin/pythonw env (criar)
+	source env/bin/activate (ativar) ou . env/bin/Activate
+WINDOWS:
+	pip2 install virtualenv (instalando venv do python 2 no windows)
+	adicionar no PATH: C:\Python27\python2.exe
+	virtualenv -p python2 env (criando a venv com nome env)
+
+
+###Python > 3.0:
+	pip3 install virtualenv (instalando venv do python 3 no windows)
+	adicionar no PATH: C:\Program Files\Python39\python3.exe
+	C:\'Program Files'\Python39\python3.exe -m pip install --upgrade pip
+	virtualenv -p python3 env (criando no diretorio raiz)	
+	python3 -m venv venv (criando a venv com nome env)
+  
+  
+python -V (versão principal python no sistema, normalmente a versão mais recente)
+python -m django —version(verificar versão django)  
+env/Scripts/activate.ps1 (ativar)
+deactivate (desativar)
+
+Obs.: 
+->Existe umas extensões do VSCode que ajudam bastante quem trabalha com Python,
+como: Python (Microsoft), Django (Baptiste), isort (microsoft), Todo Tree,
+vscode-icons, vscode-pdf;
+
+->Se possível, sempre usar o powershell do SO e não do VSCode para criar a venv
+e instalar as bibliotecas(pip install -r requirements.txt)
+
+->Quando usar o VSCode e ativar ou instalar a venv de um dos Pythons, seja
+o 2 ou o 3, na hora de executar o programa verificar se no VsCode está selecionado
+a versão correta do Python. Caso não esteja, isso pode atrapalhar a instalação de
+alguns itens dentro das venvs, como o autopep8 que foi descontinuado na versão 2
+porém funciona na versão 3. Infelizmente o VSCode buga e por vezes atrapalha a 
+instalação/atualização/import de alguns itens.

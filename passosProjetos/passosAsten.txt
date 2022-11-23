@@ -38,7 +38,7 @@ APIs - Rest (https://www.youtube.com/watch?v=gFsIGJR5R8I, https://youtu.be/gFsIG
 
 PostgreSQL (https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) admin e senha eduardo
 
-Composer (https://github.com/ibm-functions/composer-python)
+Composer(semelhante ao requirements.txt) (https://github.com/ibm-functions/composer-python)
 
 
 
@@ -69,7 +69,7 @@ https://github.com/psycopg/psycopg2/blob/master/doc/src/install.rst
 
 Adicionar váriavel de ambiente:
 
-C:\Users\<USER>\AppData\Local\Programs\Python
+C:\Python27\python2.exe
 
 C:\Program Files\PostgreSQL\15\bin
 
@@ -82,7 +82,7 @@ Comandos dentro da pasta do projeto(pasta raiz):
 
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned (comando no powershell como administrador)
 
-python -m venv env(cria a virtual env - https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv)
+python2 -m venv env(cria a virtual env - https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv)
 
 .\env\Scripts\Activate.ps1 (ativa a virtual env)
 
@@ -93,7 +93,8 @@ deactivate (desativa)
 Python 2 (virtual env):
 
 virtualenv -p /usr/local/bin/pythonw env (usando a pasta de instalação - MAC - para chamar o python e criar a venv)
-virtualenv -p c:\Python27\pythonw.exe env (Microsoft)
+virtualenv -p c:\Python27\pythonw.exe env (Microsoft) ou
+virtualenv -p python2 env (Microsoft) ou
 
 source env/bin/activate (ativar - MAC)
 env\Scripts\Activate.ps1 (ativar - Windows) 

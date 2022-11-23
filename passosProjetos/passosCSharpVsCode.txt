@@ -16,4 +16,10 @@ namespace ImersaoAVMB
 
 
 -Com o script pronto, para executar o código basta digitar: dotnet run
+-Adicionar pacotes/bibliotecas ao código: dotnet add package <PACKAGE_NAME> -v <VERSION>
+-Listar pacotes/bibliotecas do código: dotnet list package
+-Removendo pacotes/bibliotecas do código: dotnet remove package <PACKAGE_NAME>
 
+
+Obs.: 
+-> Dica: Baixar extensões no VSCode: C# (Microsoft), NuGet Package (aliasadidev);

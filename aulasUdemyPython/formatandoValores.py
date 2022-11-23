@@ -30,16 +30,16 @@ Manipulando Strings:
     https://docs.python.org/3/library/stdtypes.html (tipos)
     https://docs.python.org/3/library/functions.html (funções)
     
-""" 
+"""
 
 texto = 'Python S2'
-#quando se quer acessa o índice de uma string
-print(texto[2]) #vai ser a letra 't'
+# quando se quer acessa o índice de uma string
+print(texto[2])  # vai ser a letra 't'
 
-#quando se quer buscar de uma posição da string à outra
-print(texto[2:6]) # vai ser a subpalavra 'thon'
-print(texto[-7:-3]) # busca da direita para esquerda
+# quando se quer buscar de uma posição da string à outra
+print(texto[2:6])  # vai ser a subpalavra 'thon'
+print(texto[-7:-3])  # busca da direita para esquerda
 
-#quando se quer pular de caracter em caracter(sendo o último item de quanto em quanto)
-print(texto[0:6:2]) # vai ser a subpalavra 'pto'
-print(texto[0::3]) # vai ser a subpalavra 'ph '
+# quando se quer pular de caracter em caracter(sendo o último item de quanto em quanto)
+print(texto[0:6:2])  # vai ser a subpalavra 'pto'
+print(texto[0::3])  # vai ser a subpalavra 'ph '

@@ -1,32 +1,26 @@
-Passos Django(3.0 >):
+Passos Django > 3.0:
 
-Instalação do PIP (Python Index Package):
-
+Instalação PyPi:
 #Linux/Mac OSx:
 sudo easy_install pip
 
-
-#Distribuições Linux derivados do Debian - Ex.: Ubuntu:
+#Distribuições Linux:
 sudo apt-get install python-pip
 
 
-Instalação do Virtualenv (Ferramenta gestora de ambientes Python virtualizados isolados):
-
+Instalação do Virtualenv:
 #Linux/Mac OSx:
 pip install virtualenv
 
-
-#Distribuições Linux derivados do Debian - Ex.: Ubuntu:
+#Distribuições Linux:
 sudo apt-get install python-virtualenv
 
 
-Instalação do GIT (Habilitar o Sistema Operacional para trabalhar com controle de versão GIT)
-
+Instalação do GIT:
 #Mac OS/x:
 http://sourceforge.net/projects/git-osx-installer/
 
-
-#Distribuições Linux derivados do Debian - Ex.: Ubuntu:
+#Distribuições Linux:
 sudo apt-get install git
 
 
@@ -34,8 +28,8 @@ Criação do projeto:
 
 Documentação oficial : https://www.djangoproject.com/start/
 Objetivo: Projeto Django rodando localmente, versionado com Github
-### Sugere-se, primeiro criar a ideia do projeto do Git 
-(GitHub, Bitbucket ou GitLab). Criar os arquivos .gitignore e README.md
+### Sugere-se, primeiro criar a ideia do projeto do Git.
+Criar os arquivos .gitignore e README.md
 
 
 ### Clonar o projeto via Git no seu diretório (pasta) escolhido
@@ -43,7 +37,7 @@ git clone http://............
 
 
 ### Acessar a pasta do projeto clonado
-cd pastaClonada
+cd <pastaClonada>
 
 
 ### Criando uma virtualenv com Python (ambiente isolado) - Ambiente localizado no diretório RAIZ
@@ -51,19 +45,19 @@ virtualenv -p python3 venv
 
 
 ### Ativando a virtualenv
+Linux:
 source venv/bin/activate
+Windows:
+venv\Scripts\Activate.ps1(pelo powershell)
 
-
-### Caso esteja no Windows (principalmente o 10), para criar e ativar a venv, use estes passos
-python3 -m venv venv 
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-venv\Scripts\activate 
 
 
 ### Instalando os softwares dentro do arquivo requirements.txt
 pip install -r requirements.txt
-Obs.: Pode ser necessário instalar ferramentas(https://visualstudio.microsoft.com/pt-br/visual-cpp-build-tools/)
+Obs.: Pode ser necessário instalar ferramentas(https://visualstudio.microsoft.com/pt-br/visual-cpp-build-tools/
+e adiconar na instalação MSVC 14 que normalmente é o item necessário)
 
 
 ### Iniciando um projeto Django
@@ -76,7 +70,6 @@ cd projeto
 
 ### Configurando a linguagem e data/hora do projeto. Edite o arquivo: projeto/settings.py
 LANGUAGE_CODE = 'pt-br'
-
 TIME_ZONE = 'America/Sao_Paulo' 
 
 SUGESTÃO: copie o projeto/settings.py para dentro de seu projeto
@@ -315,17 +308,9 @@ u.save()
 
 
 
-no windows:{
-
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-python -m venv env
-.\env\Scripts\Activate.ps1
-
-}
-
-
 mysql -uroot -p (iniciar via terminal o mysql)
 auto_increment/identity (comandos para incrementar mysql/sql server)
+
 
 
 para usar github (entrar na pasta do repositorio)
@@ -335,5 +320,10 @@ git checkout nomeBranch
 git add .
 git commit - ‘comentar’
 git push origin nomeBranch
+
+
+
+Para salvar em um arquivo requirements.txt todas as bibliotecas da venv:
+pip freeze > requirements.txt.
 
 

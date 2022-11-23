@@ -1,26 +1,3 @@
-PASSOS DJANGO-REST:
-
-   mkdir testeApi
-   cd testeApi
-   pip install virtualenv (instalando virtualenv, caso não tenha
-   instalado ainda na máquina)
-
-###Python > 3.0: 
-    virtualenv -p python3 venv
-    env\Scripts\Activate.ps1
-	ou
-    python 3-m venv env (criar venv)
-    . env/bin/Activate (ativar venv)
-
-
-###Python > 2.0 e < 3.0:
-   virtualenv -p /usr/local/bin/pythonw env (criar venv - MAC)
-   virtualenv -p c:\Python27\pythonw.exe env (criar venv - Windows)
-   source env/bin/activate (ativar venv - MAC)
-   env\Scripts\Activate.ps1 (ativar venv - Windows)
-   python -V (verificar versão python)
-   python -m django —version(verificar versão django)
-
 
 ###Bibliotecas necessárias:
    pip install django
@@ -30,7 +7,6 @@ PASSOS DJANGO-REST:
 
 
 ###Comandos iniciais:
-
    django-admin startproject apiRest (iniciando o projeto)
    cd apiRest
    python manage.py startapp core (criando app núcleo do projeto)
@@ -53,3 +29,9 @@ Django funciona na seguinte ordem: rota > view > model > serializar. Depois vem 
 
 criando os requerimentos do sistema para dar push no git:
    pip freeze > requirements.txt.
+
+
+
+SE FOR USAR POSTGRE:
+password: avmb2022* ou eduardo (caso tenha login é o usuario do SO ou admin)
+porta 5432
