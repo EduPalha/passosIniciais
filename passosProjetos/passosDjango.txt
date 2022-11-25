@@ -54,10 +54,18 @@ venv\Scripts\Activate.ps1(pelo powershell)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 
-### Instalando os softwares dentro do arquivo requirements.txt
-pip install -r requirements.txt
+### Instalando os as bibliotecas: 
 Obs.: Pode ser necessário instalar ferramentas(https://visualstudio.microsoft.com/pt-br/visual-cpp-build-tools/
 e adiconar na instalação MSVC 14 que normalmente é o item necessário)
+Além disso, às vezes, certas bibliotecas, dependendo da versão do Python
+só irão estar disponíveis para baixar a partir de uma certa versão. A partir disso,
+o certo é instalar cada uma manualmente pegando do PyPi e removendo do requirements.txt
+Depois do servidor estar levantado, as tabelas do banco criadas e o usuario administrador
+estar ativo pode ser realizado uma atualização dos requirements.txt
+pip install pyproject-toml (conjunto de ferramentas)
+pip install PyNaCl (ferramentas de criptografia)
+pip install -r requirements.txt
+
 
 
 ### Iniciando um projeto Django
@@ -284,10 +292,6 @@ python manage.py migrate ....
 python manage.py shell
 
 
-### PARA VISUALIZAR, SE NECESSÁRIO, OS USUÁRIOS DO MYSQL
-SELECT user FROM mysql.user;
-
-
 ### criando o banco
 CREATE DATABASE nomeDoSistema_db;
 CREATE USER ‘nomeDoSistema’@‘localhost' IDENTIFIED BY ‘senhaDesejada’;
@@ -308,12 +312,15 @@ u.save()
 
 
 
+### PARA VISUALIZAR, SE NECESSÁRIO, OS USUÁRIOS DO MYSQL
+SELECT user FROM mysql.user;
+
 mysql -uroot -p (iniciar via terminal o mysql)
 auto_increment/identity (comandos para incrementar mysql/sql server)
 
 
 
-para usar github (entrar na pasta do repositorio)
+### para usar github (entrar na pasta do repositorio)
 git pull
 git status
 git checkout nomeBranch
@@ -323,7 +330,7 @@ git push origin nomeBranch
 
 
 
-Para salvar em um arquivo requirements.txt todas as bibliotecas da venv:
+### Para salvar em um arquivo requirements.txt todas as bibliotecas da venv:
 pip freeze > requirements.txt.
 
 

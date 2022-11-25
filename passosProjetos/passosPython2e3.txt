@@ -15,15 +15,15 @@ MAC:
 WINDOWS:
 	pip2 install virtualenv (instalando venv do python 2 no windows)
 	adicionar no PATH: C:\Python27\python2.exe
-	virtualenv -p python2 env (criando a venv com nome env)
+	virtualenv -p python2 env (criando venv com nome env)
 
 
 ###Python > 3.0:
 	pip3 install virtualenv (instalando venv do python 3 no windows)
 	adicionar no PATH: C:\Program Files\Python39\python3.exe
 	C:\'Program Files'\Python39\python3.exe -m pip install --upgrade pip
-	virtualenv -p python3 env (criando no diretorio raiz)	
-	python3 -m venv venv (criando a venv com nome env)
+	virtualenv -p python3 env (versão antiga)	
+	python3 -m venv venv (criando venv com nome env - versão nova a partir do 3.10)
   
   
 python -V (versão principal python no sistema, normalmente a versão mais recente)
