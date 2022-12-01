@@ -1,0 +1,5 @@
+Tecnologias utilizadas:
+
+Linguagem: Python 3.9 (pip) juntamente da Virtual Env
+Biblioteca: Pygame
+Compilador: VSCode (extensão python ou code runner)
