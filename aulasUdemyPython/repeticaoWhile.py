@@ -13,7 +13,7 @@ while contador <= 10:
     contador += 1
 
 # indexando letra por letra em um índice
-frase = 'o rato roeu a roupa do rei de roma'  # são 33 caracteres
+frase = "o rato roeu a roupa do rei de roma"  # são 33 caracteres
 contador = 0
 while contador < len(frase):
     print(contador, frase[contador])
@@ -22,7 +22,7 @@ while contador < len(frase):
 
 # indexando letra por letra em uma nova string
 contador = 0
-nova_string = ''
+nova_string = ""
 while contador < len(frase):
 
     nova_string = nova_string + frase[contador]

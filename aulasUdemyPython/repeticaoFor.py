@@ -4,9 +4,9 @@
     Função range(start=0, stop, step=1)
 
 """
-texto = 'Python S2'
+texto = "Python S2"
 
-auxiliar = ''
+auxiliar = ""
 for letra in texto:
     auxiliar = auxiliar + texto[letra]
 
