@@ -1,3 +1,0 @@
-cria-se um super usuario (python manage.py createsuperuser)
-roda-se script de banco (python manage.py makemigrations e migrate)
-cria-se um usuario na aplicação perfil, esta herda atributos do django.contrin.auth.models import User

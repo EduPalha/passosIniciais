@@ -1,0 +1,75 @@
+1 - Escrever um algoritmo para ler quatro valores inteiros, calcular a sua média, e escrever na tela os que são superiores à média.
+
+2- Escrever um algoritmo para ler a quantidade de horas aula dadas por dois professores e o valor por hora recebido por cada um deles. Mostrar na tela qual dos professores tem o maior salário total.
+
+3 - Escreva um programa que pede para o usuário digitar um valor entre 1 e 12, e então mostre na tela o mês correspondente. Caso o usuário digite um valor fora do intervalo, mostre uma mensagem indicando que é um mês inválido.
+
+4 - Escreva um programa que leia um valor entre 0 e 9, e então escreva na tela o mesmo na forma literal. Pergunte também se o usuário quer saber a forma literal em português, inglês ou espanhol.
+
+5 - Escreva um programa que peça para o usuário digitar uma letra, e então o programa imprime na tela se a letra é uma vogal ou consoante. Utilize no máximo 6 cases em um switch-case para resolver esse exercício.
+
+6 - Fazer uma algoritmo que leia valores para as variáveis hora, minuto e segundo; verificando e escrevendo se elas correspondem a um horário válido ou não. Para um horário ser válido, a hora deve estar no intervalo de 0 a 23, o minuto e o segundo no intervalo de 0 a 59.
+
+7 - Escreva um algoritmo para pesquisa de renda per capita que leia o valor da renda familiar e o número de integrantes da família. Calcule o valor da renda per capita da família. 
+
+8 - Um comerciante calcula o lucro da venda baseado no valor da compra dos clientes de acordo com os itens a seguir:
+
+•	Valor da Compra < R$ 10,00  então o Lucro é de 70% 
+
+•	R$ 10,00 ≤ Valor da Compra < R$ 30,00 então o Lucro é de 50% 
+
+•	R$ 30,00 ≤ Valor da Compra < R$ 50,00 então o Lucro é de 40% 
+
+•	Valor da Compra ≥ R$ 50,00 então o Lucro é de 30% 
+
+Criar um algoritmo que leia o valor da compra e imprima uma mensagem indicando de quantos % é o lucro e o valor.
+
+
+9 - Faça um algoritmo que leia o tamanho dos lados de um triangulo (lado a, b e c), e então diga se esses lados podem ou não formar um triangulo. Para que os lados formem um triângulo, todos os lados devem ser menores a soma dos outros dois lados. Caso os lados formem um triangulo, diga se o mesmo é equilátero (todos os lados iguais), isoceles (somente 2 lados são iguais) ou escaleno (os 3 lados são diferentes).
+
+
+10 - Faça um programa que leia um número e apresente a tabuada deste número.
+
+11 - Escreva um programa em C que gera números entre 1000 e 1999 e mostra aqueles que divididos por 11 dão resto 5.
+
+12 - Dado um limite inferior e superior, calcule a soma de todos os números pares contidos nesse intervalo.
+
+13 - Escreva um algoritmo que pergunte ao usuário qual o valor inicial da contagem, qual o valor final, e se ele deseja pular os valores pares ou os valores ímpares. Após, faça um laço de repetição que mostre os valores desejados.
+
+
+14 -  Imprima uma tabela de conversão de polegadas para centímetros, de 1 a 20. Considere que Polegada = Centímetro * 2,54.
+
+15 - Escreva um programa que pergunte para o usuário os valores iniciais e finais da contagem, e então mostre todos os valores desse intervalo.
+
+16 - Modifique a questão anterior de modo que seja perguntado para o usuário se ele quer que os números apareçam em ordem crescente ou decrescente.
+
+
+
+17 - Utilize o comando break no código abaixo de modo que o laço pare em 5.
+
+        static void Main(string[] args)
+
+        {
+
+            int i;
+
+            for (i = 0; i < 10; i++)
+
+            {
+
+                Console.WriteLine("Volta numero :"+i);
+
+            }
+
+
+        }
+
+18 - Utilize o comando continue de modo que as voltas de número 5 e 7 sejam puladas no código da questão anterior.
+
+
+19 - Faça um algoritmo para calcular e mostrar o resultado dos 50 primeiros elementos da série
+
+1000/1   -   997/2   +   994/3   -   991/4   +   ...
+
+
+20 - Faça um programa que leia um número n e imprima se ele é primo ou não. (um número primo tem apenas 2 divisores: 1 e ele mesmo! O número 1 não é primo!!!)

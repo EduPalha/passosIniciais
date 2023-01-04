@@ -1,6 +1,0 @@
-conceito api rest
-verbos http
-requisitos
-o que os sistemas tão querendo
-endpoints api
-auth t2(django rest) ou oAuth2
